@@ -8,8 +8,9 @@ public class ClienteTeste {
 
 	public static void main(String[] args) {
 	
-		Cliente c1 = new Cliente("Edson Cavalcanti", "95455-7610", true);
-		Cliente c2 = new Cliente("Juliana Cavalcanti", "99855-4453", false);
+		Cliente c1 = new Cliente("Edson Cavalcanti", "95455-7610", true, "123");
+		Cliente c2 = new Cliente("Juliana Cavalcanti", "99855-4453", false, "321");
+		c1.autenticaSenha("1234");
 		
 		List<Cliente> clientes = Arrays.asList(c1,c2);
 
